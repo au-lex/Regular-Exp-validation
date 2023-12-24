@@ -1,0 +1,27 @@
+.modalContainer {
+    opacity: 0;
+    visibility: hidden;
+    transition: .8s ease-in-out;
+    top: 25rem;
+    
+}
+
+.modalContainer.active {
+    opacity: 1;
+    visibility: visible;
+top: -25rem;
+}
+
+
+
+.weak {
+    color: red;
+}
+
+.normal {
+    color: orange;
+}
+
+.strong {
+    color: green;
+}

@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <section class="mainContainer mt-[.5rem]">
+    <form  class="Container  px-4 py-4">
+      
+       
+
+
+
+        <section class="imgContainer flex justify-center">
+            <div class="imgController w-[360px] h-[250px]">
+                <img src="../images/img1 (2).jpg" alt="" class="w-[100%] h-auto rounded-[8px]">
+            </div>
+
+        </section>
+        <section class="inputContainer text-center relative ">
+        
+        <section class="title my-4">
+            <h2 class="text-center capitalize text-[1.8rem] font-medium text-gray-900">password strength checker</h2>
+        </section>
+        
+           <section class="emailContainer">
+
+            <label class="block">
+              
+                <span class="absolute py-2 right-6 flex items-center pl-2">
+                    <i class="ri-mail-line text-slate-400"></i>
+                </span>
+                <input  class="placeholder:italic placeholder:text-slate-400 block
+                 bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 
+                 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 
+                 focus:ring-1 sm:text-sm    peer ..." placeholder="Enter your email......." type="email" name="search"/>
+
+                 <p class="my-4 invisible peer-invalid:visible text-red-600 text-sm  px-2 italic text-start text-[1.4rem]" >
+                    Please provide a valid email address.
+                  </p>
+              </label>
+
+           
+           </section>
+           <section class="passwordContainer">
+            <label class="block">
+            
+                <span  class="absolute py-2 right-6 flex items-center pl-2 " id="openPswd">
+                    <i class="ri-eye-off-line text-slate-400  "></i>
+                </span> 
+                <input  class="placeholder:italic placeholder:text-slate-400 block
+                 bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 
+                 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 
+                 focus:ring-1 sm:text-sm pswdContent" placeholder="Enter your password......." type="password" id="pswdInput" />
+              </label>
+           <h4 id="passwordStrength"></h4>
+           </section>
+        
+
+ <!-- modal===section -->
+ <section class="modalContainer absolute inset-0 flex items-center justify-center  ">
+
+     <section class="passwordMessage bg-slate-200 rounded-[10px] py-4 capitalize w-[100%] text-start italic ">
+         <h3    class="pswerr capitalize font-semibold text-start mx-4">a password must contain:</h3>
+         <p  id="uppercase" class="pswRules text-red-600  v"><span class="mx-4 text-[1.2rem]"><i class="ri-close-line"></i></span>an uppercase letter</p>
+         <p id="lowercase" class="pswRules text-red-600"><span class="mx-4 text-[1.2rem]"><i class="ri-close-line"></i></span>a lowercase letter</p>
+         <p id="special" class="pswRules text-red-600"><span class="mx-4 text-[1.2rem]"><i class="ri-close-line"></i></span> a special character</p>
+         <p id="oneNum" class="pswRules text-red-600"><span class="mx-4 text-[1.2rem]"><i class="ri-close-line"></i></span>contain one number</p>
+         <p id="minimum" class="pswRules text-red-600"><span class="mx-4 text-[1.2rem]"><i class="ri-close-line"></i></span>minimum of 8 numbers</p>
+         
+        </section>
+    </section>
+
+           <section class="btnContainer mt-8 text-center">
+            <button  class="validatePassword  bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded w-full italic cursor-pointer ">
+                check password
+              </button>
+              
+              
+           </section>
+        </section>
+        </form>
+
+     
+        </section>
+  </section>
+
+
+  
+  <script src="./app.js"></script>
+</body>
+</html>
